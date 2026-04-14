@@ -54,7 +54,7 @@ body{
 }
 
 .tag-col div {
-  background-color: #483f3f;
+  background-color: #2f2828;
   border-color: #99ec54;
   border-width: 1px;
   border-style: solid solid solid solid;
@@ -106,6 +106,7 @@ body{
   transition: .35s linear;
   overflow: hidden;
   display: block;
+  padding:3px;
 }
 
 .papers h4{
@@ -116,13 +117,13 @@ body{
 .papers div:hover{
   width: calc(var(--s) * var(--f));
   height: calc(var(--s) * var(--f));
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .papers div.on{
   width: calc(var(--s) * var(--f));
   height: calc(var(--s) * var(--f));
-  overflow: scroll;
+  overflow: hidden;
   border-color: #ee3773;
   border-width: 3px;
 }
@@ -149,6 +150,7 @@ h4 {
   border: 3px solid #008251;
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
+  font-size:18px;
   font-style: normal;
 }
 
