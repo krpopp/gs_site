@@ -1,6 +1,34 @@
 <!doctype html>
 <html lang="en">
 
+<!--
+HOW TO USE:
+Each json obj in panels.json has:
+1. title
+2. description
+3. array of individual speakers
+
+Replace:
+1. panel descriptions in panels.json (coming 3/17)
+2. individual abstracts, added throughout week in https://drive.google.com/drive/folders/1XMxZGAt5Wu4XnjyZU5IYmzsmhRu9Z10L?usp=sharing
+
+place the speaker's name  before the abstract in a h3 tag
+if the abstract has multiple paragraphs place them each in a <p> tag
+
+template html for abstracts:
+<h3>Bob Bobberson he/him</h3>
+<p>This is my really amazing talk about...</p>
+<p>And then I'll talk about</p>
+
+the 'titles' field in panels.json doesn't actually do anything 
+titles have to be manually changed here in the html file
+
+to replace titles:
+1. ctrl+f the placeholder title (ex: "Multiplayer" or "Hansong Li")
+2. paste the panel or paper title in BOTH spans it appears in
+-->
+
+
 <canvas id="dragon"></canvas>
 
 <head>
@@ -108,7 +136,8 @@
                 <span><span>Multiplayer Games</span></span>
                 <span aria-hidden="true">Multiplayer Games</span>
               </span>
-              <p id="panelOneDesc"> </p>
+              <p id="panelOneDesc">
+              </p>
             </div>
             <div onpointerenter="changeText(0, 0, 'testOneTwo')" onmouseleave="returnText(0, 0, 'testOneTwo')">
               <span class="text-fit">
