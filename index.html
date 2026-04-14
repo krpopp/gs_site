@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+
+<canvas id="dragon"></canvas>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>gs1</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/grid/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="dragon/dragon.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="grid.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="container p-2">
+      <div class="row justify-content-center">
+        <div class="col-12 mb-0 label-col">
+          <h1>gs1</h1>
+        </div>
+      </div>
+      <div class="row mb-3 justify-content-center">
+        <div class="col-12 desc">
+          <p>
+            gs1 is an academic conference showcasing the scholarly work of NYU Game Center MFAs.
+          </p>
+          <p>
+            Fractals are the governing theme of this year’s research. A fractal is a shape which contains a pattern no
+            matter the scale it is observed. The patterns aren’t always the same, but wherever you look there’s
+            something to see. Fractals help us make sense of an otherwise chaotic universe.
+          </p>
+          <p>
+            Each featured research project imagines its game-related subject as a cell in a larger pattern and
+            containing many inner patterns. For gs1, games exist within systems and are composed of them. It’s games all
+            the way down.
+          </p>
+          <p>Archive: <a href="/gs25/home.html">2025</a></p>
+        </div>
+      </div>
+
+      <div class="row mb-3 justify-content-md-center">
+        <div class="col-sm-1 p-0 text-end">
+          <div class="tag-col text-center">
+            <!--<div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>-->
+            <div class="place">12ᵗʰ floor Seminar Hall</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+            <div>9:00 AM</div>
+          </div>
+        </div>
+          <div class="tag-col-mob p-0 text-center">
+            <div>
+              <h3>9:00 AM - 12ᵗʰ floor Seminar Hall</h3>
+            </div>
+          </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panOne">
+            <div class="on main p-2" onpointerenter="changeText(0, -1, 'panelOneDesc')"
+              onmouseleave="returnText(0, -1, 'panelOneDesc')">
+              <span class="text-fit">
+                <span><span>Multiplayer Games</span></span>
+                <span aria-hidden="true">Multiplayer Games</span>
+              </span>
+              <p id="panelOneDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(0, 0, 'testOneTwo')" onmouseleave="returnText(0, 0, 'testOneTwo')">
+              <span class="text-fit">
+                <span><span>David Li</span></span>
+                <span aria-hidden="true">David Li</span>
+              </span>
+              <p id="testOneTwo"></p>
+            </div>
+            <div onpointerenter="changeText(0, 1, 'testTwoTwo')" onmouseleave="returnText(0, 1, 'testTwoTwo')">
+              <span class="text-fit">
+                <span><span>Faris Kazim</span></span>
+                <span aria-hidden="true">Faris Kazim</span>
+              </span>
+              <p id="testTwoTwo"></p>
+            </div>
+            <div onpointerenter="changeText(0, 2, 'testThreeTwo')" onmouseleave="returnText(0, 2, 'testThreeTwo')">
+              <span class="text-fit">
+                <span><span>Matthew Lamm</span></span>
+                <span aria-hidden="true">Matthew Lamm</span>
+              </span>
+              <p id="testThreeTwo"></p>
+            </div>
+            <div onpointerenter="changeText(0, 3, 'testFourTwo')" onmouseleave="returnText(0, 3, 'testFourTwo')">
+              <span class="text-fit">
+                <span><span>Rena Chen</span></span>
+                <span aria-hidden="true">Rena Chen</span>
+              </span>
+              <p id="testFourTwo"></p>
+            </div>
+            <div onpointerenter="changeText(0, 4, 'testFiveTwo')" onmouseleave="returnText(0, 4, 'testFiveTwo')">
+              <span class="text-fit">
+                <span><span>Riley Lyman</span></span>
+                <span aria-hidden="true">Riley Lyman</span>
+              </span>
+              <p id="testFiveTwo"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3 justify-content-md-center">
+        <div class="col-1 p-0 text-end">
+          <div class="tag-col text-center">
+            <!--<div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>-->
+            <div class="place">12ᵗʰ floor Seminar Hall</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+          </div>
+        </div>
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>10:30 AM - 12ᵗʰ floor Seminar Hall</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panTwo">
+            <div class="on main" onpointerenter="changeText(1, -1, 'panelTwoDesc')"
+              onmouseleave="returnText(1, -1, 'panelTwoDesc')">
+              <span class="text-fit">
+                <span><span>Genre</span></span>
+                <span aria-hidden="true">Genre</span>
+              </span>
+              <p id="panelTwoDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(1, 0, 'pTwoOne')" onmouseleave="returnText(1, 0, 'pTwoOne')">
+              <span class="text-fit">
+                <span><span>Amber Xia</span></span>
+                <span aria-hidden="true">Amber Xia</span>
+              </span>
+              <p id="pTwoOne"></p>
+            </div>
+            <div onpointerenter="changeText(1, 1, 'pTwoTwo')" onmouseleave="returnText(1, 1, 'pTwoTwo')">
+              <span class="text-fit">
+                <span><span>Hansong Li</span></span>
+                <span aria-hidden="true">Hansong Li</span>
+              </span>
+              <p id="pTwoTwo"></p>
+            </div>
+            <div onpointerenter="changeText(1, 2, 'pTwoThree')" onmouseleave="returnText(1, 2, 'pTwoThree')">
+              <span class="text-fit">
+                <span><span>Jon Topielski</span></span>
+                <span aria-hidden="true">Jon Topielski</span>
+              </span>
+              <p id="pTwoThree"></p>
+            </div>
+            <div onpointerenter="changeText(1, 3, 'pTwoFour')" onmouseleave="returnText(1, 3, 'pTwoFour')">
+              <span class="text-fit">
+                <span><span>Kai DeJesus</span></span>
+                <span aria-hidden="true">Kai DeJesus</span>
+              </span>
+              <p id="pTwoFour"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 p-0 text-end et">
+          <div class="tag-col text-center">
+
+            <!--<div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>-->
+            <div class="place">6ᵗʰ floor Room 616</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+            <div>10:30 AM</div>
+          </div>
+        </div>
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>10:30 AM - 6ᵗʰ floor Room 616</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panThree">
+            <div class="on main" onpointerenter="changeText(2, -1, 'panelThreeDesc')"
+              onmouseleave="returnText(2, -1, 'panelThreeDesc')">
+              <span class="text-fit">
+                <span><span>Aesthetics</span></span>
+                <span aria-hidden="true">Aesthetics</span>
+              </span>
+              <p id="panelThreeDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(2, 0, 'pThreeOne')" onmouseleave="returnText(2, 0, 'pThreeOne')">
+              <span class="text-fit">
+                <span><span>Claire Lincoln</span></span>
+                <span aria-hidden="true">Claire Lincoln</span>
+              </span>
+              <p id="pThreeOne"></p>
+            </div>
+            <div onpointerenter="changeText(2, 1, 'pThreeTwo')" onmouseleave="returnText(2, 1, 'pThreeTwo')">
+              <span class="text-fit">
+                <span><span>George Eltzroth</span></span>
+                <span aria-hidden="true">George Eltzroth</span>
+              </span>
+              <p id="pThreeTwo"></p>
+            </div>
+            <div onpointerenter="changeText(2, 2, 'pThreeThree')" onmouseleave="returnText(2, 2, 'pThreeThree')">
+              <span class="text-fit">
+                <span><span>LJ Wei</span></span>
+                <span aria-hidden="true">LJ Wei</span>
+              </span>
+              <p id="pThreeThree"></p>
+            </div>
+            <div onpointerenter="changeText(2, 3, 'pThreeFour')" onmouseleave="returnText(2, 3, 'pThreeFour')">
+              <span class="text-fit">
+                <span><span>Prince Wang</span></span>
+                <span aria-hidden="true">Prince Wang</span>
+              </span>
+              <p id="pThreeFour"></p>
+            </div>
+            <div onpointerenter="changeText(2, 4, 'pThreeFive')" onmouseleave="returnText(2, 4, 'pThreeFive')">
+              <span class="text-fit">
+                <span><span>Zhili Chen</span></span>
+                <span aria-hidden="true">Zhili Chen</span>
+              </span>
+              <p id="pThreeFive"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3 justify-content-md-center">
+        <div class="col-1 p-0 text-end">
+          <div class="tag-col text-center">
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+            <div>12:00 PM</div>
+          </div>
+        </div>
+
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>12:00 PM</h3>
+          </div>
+        </div>
+        <div class="col py-4 lunch-col text-center">
+          <h1 class="align-middle"> Lunch </h1>
+        </div>
+      </div>
+
+      <div class="row mb-3 justify-content-md-center">
+        <div class="col-1 p-0 text-end">
+          <div class="tag-col text-center">
+            <!--<div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>-->
+            <div class="place">6ᵗʰ floor Room 616</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+          </div>
+        </div>
+
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>1:00 PM- 6ᵗʰ floor Room 616</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col ">
+          <div class="container sticky-bottom papers" id="panFour">
+            <div class="on main" onpointerenter="changeText(3, -1, 'panelFourDesc')"
+              onmouseleave="returnText(4, -1, 'panelFourDesc')">
+              <span class="text-fit">
+                <span><span>Industry</span></span>
+                <span aria-hidden="true">Industry</span>
+              </span>
+              <p id="panelFourDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(3, 0, 'pFourOne')" onmouseleave="returnText(4, 0, 'pFourOne')">
+              <span class="text-fit">
+                <span><span>Abhishek Chatterjee</span></span>
+                <span aria-hidden="true">Abhishek Chatterjee</span>
+              </span>
+              <p id="pFourOne"></p>
+            </div>
+            <div onpointerenter="changeText(3, 1, 'pFourTwo')" onmouseleave="returnText(4, 1, 'pFourTwo')">
+              <span class="text-fit">
+                <span><span>Destin Piagentini</span></span>
+                <span aria-hidden="true">Destin Piagentini</span>
+              </span>
+              <p id="pFourTwo"></p>
+            </div>
+            <div onpointerenter="changeText(3, 2, 'pFourThree')" onmouseleave="returnText(4, 2, 'pFourThree')">
+              <span class="text-fit">
+                <span><span>Madeline Khare</span></span>
+                <span aria-hidden="true">Madeline Khare</span>
+              </span>
+              <p id="pFourThree"></p>
+            </div>
+            <div onpointerenter="changeText(3, 3, 'pFourFour')" onmouseleave="returnText(4, 3, 'pFourFour')">
+              <span class="text-fit">
+                <span><span>Peyton Schwiebert</span></span>
+                <span aria-hidden="true">Peyton Schwiebert</span>
+              </span>
+              <p id="pFourFour"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 p-0 text-end et">
+          <div class="tag-col text-center">
+            <!--<div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>-->
+            <div class="place">12ᵗʰ floor Seminar Hall</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+          </div>
+        </div>
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>1:00 PM - 12ᵗʰ floor Seminar Hall</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panFive">
+            <div class="on main" onpointerenter="changeText(4, -1, 'panelFiveDesc')"
+              onmouseleave="returnText(5, -1, 'panelFiveDesc')">
+              <span class="text-fit">
+                <span><span>Systems</span></span>
+                <span aria-hidden="true">Systems</span>
+              </span>
+              <p id="panelFiveDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(4, 0, 'pFiveOne')" onmouseleave="returnText(5, 0, 'pFiveOne')">
+              <span class="text-fit">
+                <span><span>Alexander Machalicky</span></span>
+                <span aria-hidden="true">Alexander Machalicky</span>
+              </span>
+              <p id="pFiveOne"></p>
+            </div>
+            <div onpointerenter="changeText(4, 1, 'pFiveTwo')" onmouseleave="returnText(5, 1, 'pFiveTwo')">
+              <span class="text-fit">
+                <span><span>Ashley Newell</span></span>
+                <span aria-hidden="true">Ashley Newell</span>
+              </span>
+              <p id="pFiveTwo"></p>
+            </div>
+            <div onpointerenter="changeText(4, 2, 'pFiveThree')" onmouseleave="returnText(5, 2, 'pFiveThree')">
+              <span class="text-fit">
+                <span><span>Jiayu Ruan</span></span>
+                <span aria-hidden="true">Jiayu Ruan</span>
+              </span>
+              <p id="pFiveThree"></p>
+            </div>
+            <div onpointerenter="changeText(4, 3, 'pFiveFour')" onmouseleave="returnText(5, 3, 'pFiveFour')">
+              <span class="text-fit">
+                <span><span>Xingyu Qin</span></span>
+                <span aria-hidden="true">Xingyu Qin</span>
+              </span>
+              <p id="pFiveFour"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3 justify-content-md-center">
+        <div class="col-1 p-0 text-end">
+          <div class="tag-col text-center">
+            <!--<div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>-->
+            <div class="place">6ᵗʰ floor Room 616</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+          </div>
+        </div>
+
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>2:30 PM - 6ᵗʰ floor Room 616</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panSix">
+            <div class="on main" onpointerenter="changeText(5, -1, 'panelSixDesc')"
+              onmouseleave="returnText(6, -1, 'panelSixDesc')">
+              <span class="text-fit">
+                <span><span>Makers and Breakers</span></span>
+                <span aria-hidden="true">Makers and Breakers</span>
+              </span>
+              <p id="panelSixDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(5, 0, 'pSixOne')" onmouseleave="returnText(6, 0, 'pSixOne')">
+              <span class="text-fit">
+                <span><span>Finlay Logan</span></span>
+                <span aria-hidden="true">Finlay Logan</span>
+              </span>
+              <p id="pSixOne"></p>
+            </div>
+            <div onpointerenter="changeText(5, 1, 'pSixTwo')" onmouseleave="returnText(6, 1, 'pSixTwo')">
+              <span class="text-fit">
+                <span><span>Selah Wright</span></span>
+                <span aria-hidden="true">Selah Wright</span>
+              </span>
+              <p id="pSixTwo"></p>
+            </div>
+            <div onpointerenter="changeText(5, 2, 'pSixThree')" onmouseleave="returnText(6, 2, 'pSixThree')">
+              <span class="text-fit">
+                <span><span>Shreesha Yelameli</span></span>
+                <span aria-hidden="true">Shreesha Yelameli</span>
+              </span>
+              <p id="pSixThree"></p>
+            </div>
+            <div onpointerenter="changeText(5, 3, 'pSixFour')" onmouseleave="returnText(6, 3, 'pSixFour')">
+              <span class="text-fit">
+                <span><span>Stephen Rubino</span></span>
+                <span aria-hidden="true">Stephen Rubino</span>
+              </span>
+              <p id="pSixFour"></p>
+            </div>
+            <div onpointerenter="changeText(5, 4, 'pSixFive')" onmouseleave="returnText(6, 4, 'pSixFive')">
+              <span class="text-fit">
+                <span><span>Whit Walton</span></span>
+                <span aria-hidden="true">Whit Walton</span>
+              </span>
+              <p id="pSixFive"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 p-0 text-end et">
+          <div class="tag-col text-center">
+            <!--<div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>-->
+            <div class="place">12ᵗʰ floor Seminar Hall</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+          </div>
+        </div>
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>2:30 PM - 12ᵗʰ floor Seminar Hall</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panSeven">
+            <div class="on main" onpointerenter="changeText(6, -1, 'panelSevenDesc')"
+              onmouseleave="returnText(7, -1, 'panelSevenDesc')">
+              <span class="text-fit">
+                <span><span>Couch, 9:16, Shoes, Acrylic Charm</span></span>
+                <span aria-hidden="true">Couch, 9:16, Shoes, Acrylic Charm</span>
+              </span>
+              <p id="panelSevenDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(6, 0, 'pSevenOne')" onmouseleave="returnText(7, 0, 'pSevenOne')">
+              <span class="text-fit">
+                <span><span>Ahmed Shuwehdi</span></span>
+                <span aria-hidden="true">Ahmed Shuwehdi</span>
+              </span>
+              <p id="pSevenOne"></p>
+            </div>
+            <div onpointerenter="changeText(6, 1, 'pSevenTwo')" onmouseleave="returnText(7, 1, 'pSevenTwo')">
+              <span class="text-fit">
+                <span><span>Jingwen Shi</span></span>
+                <span aria-hidden="true">Jingwen Shi</span>
+              </span>
+              <p id="pSevenTwo"></p>
+            </div>
+            <div onpointerenter="changeText(6, 2, 'pSevenThree')" onmouseleave="returnText(7, 2, 'pSevenThree')">
+              <span class="text-fit">
+                <span><span>Marco Carenza</span></span>
+                <span aria-hidden="true">Marco Carenza</span>
+              </span>
+              <p id="pSevenThree"></p>
+            </div>
+            <div onpointerenter="changeText(6, 3, 'pSevenFour')" onmouseleave="returnText(7, 3, 'pSevenFour')">
+              <span class="text-fit">
+                <span><span>Nic Kim</span></span>
+                <span aria-hidden="true">Nic Kim</span>
+              </span>
+              <p id="pSevenFour"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3 justify-content-md-center">
+        <div class="col-1 p-0 text-end">
+          <div class="tag-col text-center">
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+            <div>4:00 PM</div>
+          </div>
+        </div>
+
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>4:00 PM</h3>
+          </div>
+        </div>
+        <div class="col py-4 lunch-col text-center">
+          <h1 class="align-middle"> Break </h1>
+        </div>
+      </div>
+
+      <div class="row mb-3 justify-content-md-center">
+        <div class="col-1 p-0 text-end">
+          <div class="tag-col text-center">
+            <!--<div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>-->
+            <div class="place">12ᵗʰ floor Seminar Hall</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+            <div>4:15 PM</div>
+          </div>
+        </div>
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>4:15 PM - 12ᵗʰ floor Seminar Hall</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panEight">
+            <div class="on main" onpointerenter="changeText(7, -1, 'panelEightDesc')"
+              onmouseleave="returnText(8, -1, 'panelEightDesc')">
+              <span class="text-fit">
+                <span><span>Identity</span></span>
+                <span aria-hidden="true">Identity</span>
+              </span>
+              <p id="panelEightDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(7, 0, 'pEightOne')" onmouseleave="returnText(8, 0, 'pEightOne')">
+              <span class="text-fit">
+                <span><span>Despoina/DLC</span></span>
+                <span aria-hidden="true">Despoina/DLC</span>
+              </span>
+              <p id="pEightOne"></p>
+            </div>
+            <div onpointerenter="changeText(7, 1, 'pEightTwo')" onmouseleave="returnText(8, 1, 'pEightTwo')">
+              <span class="text-fit">
+                <span><span>Esteban Romero</span></span>
+                <span aria-hidden="true">Esteban Romero</span>
+              </span>
+              <p id="pEightTwo"></p>
+            </div>
+            <div onpointerenter="changeText(7, 2, 'pEightThree')" onmouseleave="returnText(8, 2, 'pEightThree')">
+              <span class="text-fit">
+                <span><span>Lucas Chan</span></span>
+                <span aria-hidden="true">Lucas Chan</span>
+              </span>
+              <p id="pEightThree"></p>
+            </div>
+            <div onpointerenter="changeText(7, 3, 'pEightFour')" onmouseleave="returnText(8, 3, 'pEightFour')">
+              <span class="text-fit">
+                <span><span>Mars So</span></span>
+                <span aria-hidden="true">Mars So</span>
+              </span>
+              <p id="pEightFour"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-12 mb-0 label-col">
+          <h1>about + contact</h1>
+        </div>
+      </div>
+      <div class="row">
+        <img class="col-2 p-0 id" style="border-style: solid none none solid;" src="p2.png">
+        <img class="col p-0 im" style="border-style: solid none none solid;" src="p2.png">
+        <div class="col p-0 desc" style="border-style: solid solid none solid;">
+          <p class="p-3">Questions can be directed to karina.popp@nyu.edu</p>
+          <p class="p-3">Poster designs by Nic Kim and Jiayu Ruan</p>
+          <p class="p-3">Organized by Karina Popp with assistance from Steele Citrone and Rio Flores</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-0 desc">
+          <p class="p-3">
+            Short for ‘Game Studies I’, a required course for Game Center MFA students, gs1 features students’
+            semester-long analytical research projects. In keeping with the hands-on nature of the overall graduate
+            program, the intention of this conference is to do game studies by sharing in-progress work. Join us for a
+            day of presentations, roundtables, and workshops exploring games, play, and design.
+          </p>
+        </div>
+        <img class="col-3 p-0 id" style="border-style: solid solid solid none;" src="p1.png" class="img-fluid">
+        <img class="col-12 p-0 im" style="border-style: solid solid solid none;" src="p1.png" class="img-fluid">
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+  <script src='dragon/dragon.js'></script>
+  <script type="text/javascript" src="./panels.json"></script>
+  <script type="text/javascript" src="./script.js"></script>
+  <script>
+    let panels = [];
+    $(document).ready(function () {
+      $.getJSON("./panels.json", function (panels) {
+        main(panels);
+      });
+    })
+  </script>
+</body>
+
+</html>
