@@ -1,6 +1,14 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
+    - export DEPLOYPATH=/home/k4566dbsq5un/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp grid.css $DEPLOYPATH
+    - /bin/cp noisebg.svg $DEPLOYPATH
+    - /bin/cp p1.png $DEPLOYPATH
+    - /bin/cp p2.png $DEPLOYPATH
+    - /bin/cp panels.json $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R dragon $DEPLOYPATH
+    - /bin/cp -R gs25 $DEPLOYPATH
