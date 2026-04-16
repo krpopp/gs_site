@@ -71,7 +71,26 @@
         },
         {
         "title": "Zhili Chen",
-        "description": ""
+        "description": "Violence has long been a central component of game design, yet it is often treated primarily
+as a mechanic of challenge or spectacle rather than as a meaningful expressive tool. This
+project investigates violence as a form of expression in games, asking how violent systems
+can convey emotion, character, and narrative rather than merely serve as interactive conflict
+resolution.
+This research contributes to ongoing discourse by reframing violence not as content alone,
+but as a designed language embedded within player interaction. Drawing from analyses of
+existing games, film theory, and interactive media studies, the project examines how timing,
+player agency, repetition, and feedback systems shape the emotional and narrative meaning
+of violent acts. Particular attention is given to how systems of escalation, loss of control, and
+embodiment can transform violence into a vehicle for expressing psychological states.
+The practical component of this research is a prototype game that situates combat within the
+everyday life of a troubled high school student. In this work, fighting is not the primary goal
+but one aspect of a broader simulation, where player actions accumulate toward moments of
+loss of control, represented through a “possession” system. This design explores how violence
+can emerge from systemic pressure rather than player intention alone.
+The findings suggest that when integrated with narrative systems and player state, violence
+can function as a powerful expressive medium, capable of communicating internal conflict
+and social tension. This project demonstrates how recontextualizing violence can expand its
+role within game design beyond spectacle toward meaningful expression."
         }
     ]
   },
