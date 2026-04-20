@@ -1,34 +1,5 @@
 <!doctype html>
 <html lang="en">
-
-<!--
-HOW TO USE:
-Each json obj in panels.json has:
-1. title
-2. description
-3. array of individual speakers
-
-Replace:
-1. panel descriptions in panels.json (coming 3/17)
-2. individual abstracts, added throughout week in https://drive.google.com/drive/folders/1XMxZGAt5Wu4XnjyZU5IYmzsmhRu9Z10L?usp=sharing
-
-place the speaker's name  before the abstract in a h3 tag
-if the abstract has multiple paragraphs place them each in a <p> tag
-
-template html for abstracts:
-<h3>Bob Bobberson he/him</h3>
-<p>This is my really amazing talk about...</p>
-<p>And then I'll talk about</p>
-
-the 'titles' field in panels.json doesn't actually do anything 
-titles have to be manually changed here in the html file
-
-to replace titles:
-1. ctrl+f the placeholder title (ex: "Multiplayer" or "Hansong Li")
-2. paste the panel or paper title in BOTH spans it appears in
--->
-
-
 <canvas id="dragon"></canvas>
 
 <head>
@@ -47,15 +18,8 @@ to replace titles:
     rel="stylesheet">
   <link rel="stylesheet" href="dragon/dragon.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-
-
   <!-- Bootstrap core CSS -->
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-  </style>
-
-
   <!-- Custom styles for this template -->
   <link href="grid.css" rel="stylesheet">
 </head>
@@ -123,11 +87,11 @@ to replace titles:
             <div>9:00 AM</div>
           </div>
         </div>
-          <div class="tag-col-mob p-0 text-center">
-            <div>
-              <h3>9:00 AM - 12th floor Seminar Hall</h3>
-            </div>
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>9:00 AM - 12th floor Seminar Hall</h3>
           </div>
+        </div>
         <div class="col themed-grid-col">
           <div class="container sticky-bottom papers" id="panOne">
             <div class="on main p-2" onpointerenter="changeText(0, -1, 'panelOneDesc')"
@@ -170,9 +134,9 @@ to replace titles:
             <div onpointerenter="changeText(0, 4, 'testFiveTwo')" onmouseleave="returnText(0, 4, 'testFiveTwo')">
               <span class="text-fit">
                 <span><span>Tales Between Bytes: Player Stories and the
-Preservation of the MMO</span></span>
+                    Preservation of the MMO</span></span>
                 <span aria-hidden="true">Tales Between Bytes: Player Stories and the
-Preservation of the MMO</span>
+                  Preservation of the MMO</span>
               </span>
               <p id="testFiveTwo"></p>
             </div>
@@ -378,6 +342,97 @@ Preservation of the MMO</span>
       <div class="row mb-3 justify-content-md-center">
         <div class="col-1 p-0 text-end">
           <div class="tag-col text-center">
+            <div class="place" style="background-color: #483f3f;">12th floor Seminar Hall</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+          </div>
+        </div>
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>1:00 PM - 12th floor Seminar Hall</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panFive">
+            <div class="on main" onpointerenter="changeText(4, -1, 'panelFiveDesc')"
+              onmouseleave="returnText(5, -1, 'panelFiveDesc')">
+              <span class="text-fit">
+                <span><span>Systems</span></span>
+                <span aria-hidden="true">Systems</span>
+              </span>
+              <p id="panelFiveDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(4, 0, 'pFiveOne')" onmouseleave="returnText(5, 0, 'pFiveOne')">
+              <span class="text-fit">
+                <span><span>The New Run</span></span>
+                <span aria-hidden="true">The New Run</span>
+              </span>
+              <p id="pFiveOne"></p>
+            </div>
+            <div onpointerenter="changeText(4, 1, 'pFiveTwo')" onmouseleave="returnText(5, 1, 'pFiveTwo')">
+              <span class="text-fit">
+                <span><span>Toxicity Is Overtuned: Employing In-Game Mechanics and Psychology to Nerf Negative Social
+                    Behaviors in Online Multiplayer Games</span></span>
+                <span aria-hidden="true">Toxicity Is Overtuned: Employing In-Game Mechanics and Psychology to Nerf
+                  Negative Social Behaviors in Online Multiplayer Games</span>
+              </span>
+              <p id="pFiveTwo"></p>
+            </div>
+            <div onpointerenter="changeText(4, 2, 'pFiveThree')" onmouseleave="returnText(5, 2, 'pFiveThree')">
+              <span class="text-fit">
+                <span><span>Jiayu Ruan</span></span>
+                <span aria-hidden="true">Jiayu Ruan</span>
+              </span>
+              <p id="pFiveThree"></p>
+            </div>
+            <div onpointerenter="changeText(4, 3, 'pFiveFour')" onmouseleave="returnText(5, 3, 'pFiveFour')">
+              <span class="text-fit">
+                <span><span>Time Loops as Ludonarrative Harmony: Character-Player Arcs in Video Games</span></span>
+                <span aria-hidden="true">Time Loops as Ludonarrative Harmony: Character-Player Arcs in Video
+                  Games</span>
+              </span>
+              <p id="pFiveFour"></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-1 p-0 text-end et">
+          <div class="tag-col text-center">
+            <!--<div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>
+            <div>1:00 PM</div>-->
             <div class="place" style="background-color: #483f3f;">6th floor Room 616</div>
             <div>1:00 PM</div>
             <div>1:00 PM</div>
@@ -438,10 +493,11 @@ Preservation of the MMO</span>
               <span class="text-fit">
                 <span><span>Unalive Service: How the Pursuit of the Live-Service Boom of the Digital Gaming Industry Led
 
-to its Most Difficult Era in Recent Memory</span></span>
-                <span aria-hidden="true">Unalive Service: How the Pursuit of the Live-Service Boom of the Digital Gaming Industry Led
+                    to its Most Difficult Era in Recent Memory</span></span>
+                <span aria-hidden="true">Unalive Service: How the Pursuit of the Live-Service Boom of the Digital Gaming
+                  Industry Led
 
-to its Most Difficult Era in Recent Memory</span>
+                  to its Most Difficult Era in Recent Memory</span>
               </span>
               <p id="pFourTwo"></p>
             </div>
@@ -461,193 +517,17 @@ to its Most Difficult Era in Recent Memory</span>
             </div>
           </div>
         </div>
-        <div class="col-1 p-0 text-end et">
-          <div class="tag-col text-center">
-            <!--<div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>-->
-            <div class="place" style="background-color: #483f3f;">12th floor Seminar Hall</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-            <div>1:00 PM</div>
-          </div>
-        </div>
-        <div class="tag-col-mob p-0 text-center">
-          <div>
-            <h3>1:00 PM - 12th floor Seminar Hall</h3>
-          </div>
-        </div>
-        <div class="col themed-grid-col">
-          <div class="container sticky-bottom papers" id="panFive">
-            <div class="on main" onpointerenter="changeText(4, -1, 'panelFiveDesc')"
-              onmouseleave="returnText(5, -1, 'panelFiveDesc')">
-              <span class="text-fit">
-                <span><span>Systems</span></span>
-                <span aria-hidden="true">Systems</span>
-              </span>
-              <p id="panelFiveDesc"> </p>
-            </div>
-            <div onpointerenter="changeText(4, 0, 'pFiveOne')" onmouseleave="returnText(5, 0, 'pFiveOne')">
-              <span class="text-fit">
-                <span><span>The New Run</span></span>
-                <span aria-hidden="true">The New Run</span>
-              </span>
-              <p id="pFiveOne"></p>
-            </div>
-            <div onpointerenter="changeText(4, 1, 'pFiveTwo')" onmouseleave="returnText(5, 1, 'pFiveTwo')">
-              <span class="text-fit">
-                <span><span>Toxicity Is Overtuned: Employing In-Game Mechanics and Psychology to Nerf Negative Social Behaviors in Online Multiplayer Games</span></span>
-                <span aria-hidden="true">Toxicity Is Overtuned: Employing In-Game Mechanics and Psychology to Nerf Negative Social Behaviors in Online Multiplayer Games</span>
-              </span>
-              <p id="pFiveTwo"></p>
-            </div>
-            <div onpointerenter="changeText(4, 2, 'pFiveThree')" onmouseleave="returnText(5, 2, 'pFiveThree')">
-              <span class="text-fit">
-                <span><span>Jiayu Ruan</span></span>
-                <span aria-hidden="true">Jiayu Ruan</span>
-              </span>
-              <p id="pFiveThree"></p>
-            </div>
-            <div onpointerenter="changeText(4, 3, 'pFiveFour')" onmouseleave="returnText(5, 3, 'pFiveFour')">
-              <span class="text-fit">
-                <span><span>Time Loops as Ludonarrative Harmony: Character-Player Arcs in Video Games</span></span>
-                <span aria-hidden="true">Time Loops as Ludonarrative Harmony: Character-Player Arcs in Video Games</span>
-              </span>
-              <p id="pFiveFour"></p>
-            </div>
-          </div>
-        </div>
+
+
+
+
+
+
       </div>
 
       <div class="row mb-3 justify-content-md-center">
         <div class="col-1 p-0 text-end">
           <div class="tag-col text-center">
-            <div class="place" style="background-color: #483f3f;">6th floor Room 616</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-          </div>
-        </div>
-
-        <div class="tag-col-mob p-0 text-center">
-          <div>
-            <h3>2:30 PM - 6th floor Room 616</h3>
-          </div>
-        </div>
-        <div class="col themed-grid-col">
-          <div class="container sticky-bottom papers" id="panSix">
-            <div class="on main" onpointerenter="changeText(5, -1, 'panelSixDesc')"
-              onmouseleave="returnText(6, -1, 'panelSixDesc')">
-              <span class="text-fit">
-                <span><span>Makers and Breakers: How the Formats of Game Creation are Intentionally Broken to Create New Possibilities</span></span>
-                <span aria-hidden="true">Makers and Breakers: How the Formats of Game Creation are Intentionally Broken to Create New Possibilities</span>
-              </span>
-              <p id="panelSixDesc"> </p>
-            </div>
-            <div onpointerenter="changeText(5, 0, 'pSixOne')" onmouseleave="returnText(6, 0, 'pSixOne')">
-              <span class="text-fit">
-                <span><span>Finlay Logan</span></span>
-                <span aria-hidden="true">Finlay Logan</span>
-              </span>
-              <p id="pSixOne"></p>
-            </div>
-            <div onpointerenter="changeText(5, 1, 'pSixTwo')" onmouseleave="returnText(6, 1, 'pSixTwo')">
-              <span class="text-fit">
-                <span><span>You Played Yourself: Autobiographical Games as Artistic Depictions of the Self</span></span>
-                <span aria-hidden="true">You Played Yourself: Autobiographical Games as Artistic Depictions of the Self</span>
-              </span>
-              <p id="pSixTwo"></p>
-            </div>
-            <div onpointerenter="changeText(5, 2, 'pSixThree')" onmouseleave="returnText(6, 2, 'pSixThree')">
-              <span class="text-fit">
-                <span><span>The Secrets of Game Development Lie in The Differences Between Any% and 100%
-Speedruns</span></span>
-                <span aria-hidden="true">The Secrets of Game Development Lie in The Differences Between Any% and 100%
-Speedruns</span>
-              </span>
-              <p id="pSixThree"></p>
-            </div>
-            <div onpointerenter="changeText(5, 3, 'pSixFour')" onmouseleave="returnText(6, 3, 'pSixFour')">
-              <span class="text-fit">
-                <span><span>Stephen Rubino</span></span>
-                <span aria-hidden="true">Stephen Rubino</span>
-              </span>
-              <p id="pSixFour"></p>
-            </div>
-            <div onpointerenter="changeText(5, 4, 'pSixFive')" onmouseleave="returnText(6, 4, 'pSixFive')">
-              <span class="text-fit">
-                <span><span>African Diasporic Culture Preservation Through Games</span></span>
-                <span aria-hidden="true">African Diasporic Culture Preservation Through Games</span>
-              </span>
-              <p id="pSixFive"></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-1 p-0 text-end et">
-          <div class="tag-col text-center">
-            <!--<div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>
-            <div>2:30 PM</div>-->
             <div class="place" style="background-color: #483f3f;">12th floor Seminar Hall</div>
             <div>2:30 PM</div>
             <div>2:30 PM</div>
@@ -699,7 +579,8 @@ Speedruns</span>
             <div onpointerenter="changeText(6, 0, 'pSevenOne')" onmouseleave="returnText(7, 0, 'pSevenOne')">
               <span class="text-fit">
                 <span><span>Museums as Walking Simulators: Designing for Movement, Meaning, and Control</span></span>
-                <span aria-hidden="true">Museums as Walking Simulators: Designing for Movement, Meaning, and Control</span>
+                <span aria-hidden="true">Museums as Walking Simulators: Designing for Movement, Meaning, and
+                  Control</span>
               </span>
               <p id="pSevenOne"></p>
             </div>
@@ -712,8 +593,10 @@ Speedruns</span>
             </div>
             <div onpointerenter="changeText(6, 2, 'pSevenThree')" onmouseleave="returnText(7, 2, 'pSevenThree')">
               <span class="text-fit">
-                <span><span>Fighting Games and the Fighting Game Community (FGC): How Do They Diverge From Other Competitive Genres and Communities?</span></span>
-                <span aria-hidden="true">Fighting Games and the Fighting Game Community (FGC): How Do They Diverge From Other Competitive Genres and Communities?</span>
+                <span><span>Fighting Games and the Fighting Game Community (FGC): How Do They Diverge From Other
+                    Competitive Genres and Communities?</span></span>
+                <span aria-hidden="true">Fighting Games and the Fighting Game Community (FGC): How Do They Diverge From
+                  Other Competitive Genres and Communities?</span>
               </span>
               <p id="pSevenThree"></p>
             </div>
@@ -723,6 +606,106 @@ Speedruns</span>
                 <span aria-hidden="true">Nic Kim</span>
               </span>
               <p id="pSevenFour"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1 p-0 text-end et">
+          <div class="tag-col text-center">
+            <!--<div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>-->
+            <div class="place" style="background-color: #483f3f;">6th floor Room 616</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+            <div>2:30 PM</div>
+          </div>
+        </div>
+
+        <div class="tag-col-mob p-0 text-center">
+          <div>
+            <h3>2:30 PM - 6th floor Room 616</h3>
+          </div>
+        </div>
+        <div class="col themed-grid-col">
+          <div class="container sticky-bottom papers" id="panSix">
+            <div class="on main" onpointerenter="changeText(5, -1, 'panelSixDesc')"
+              onmouseleave="returnText(6, -1, 'panelSixDesc')">
+              <span class="text-fit">
+                <span><span>Makers and Breakers: How the Formats of Game Creation are Intentionally Broken to Create New
+                    Possibilities</span></span>
+                <span aria-hidden="true">Makers and Breakers: How the Formats of Game Creation are Intentionally Broken
+                  to Create New Possibilities</span>
+              </span>
+              <p id="panelSixDesc"> </p>
+            </div>
+            <div onpointerenter="changeText(5, 0, 'pSixOne')" onmouseleave="returnText(6, 0, 'pSixOne')">
+              <span class="text-fit">
+                <span><span>Finlay Logan</span></span>
+                <span aria-hidden="true">Finlay Logan</span>
+              </span>
+              <p id="pSixOne"></p>
+            </div>
+            <div onpointerenter="changeText(5, 1, 'pSixTwo')" onmouseleave="returnText(6, 1, 'pSixTwo')">
+              <span class="text-fit">
+                <span><span>You Played Yourself: Autobiographical Games as Artistic Depictions of the Self</span></span>
+                <span aria-hidden="true">You Played Yourself: Autobiographical Games as Artistic Depictions of the
+                  Self</span>
+              </span>
+              <p id="pSixTwo"></p>
+            </div>
+            <div onpointerenter="changeText(5, 2, 'pSixThree')" onmouseleave="returnText(6, 2, 'pSixThree')">
+              <span class="text-fit">
+                <span><span>The Secrets of Game Development Lie in The Differences Between Any% and 100%
+                    Speedruns</span></span>
+                <span aria-hidden="true">The Secrets of Game Development Lie in The Differences Between Any% and 100%
+                  Speedruns</span>
+              </span>
+              <p id="pSixThree"></p>
+            </div>
+            <div onpointerenter="changeText(5, 3, 'pSixFour')" onmouseleave="returnText(6, 3, 'pSixFour')">
+              <span class="text-fit">
+                <span><span>Stephen Rubino</span></span>
+                <span aria-hidden="true">Stephen Rubino</span>
+              </span>
+              <p id="pSixFour"></p>
+            </div>
+            <div onpointerenter="changeText(5, 4, 'pSixFive')" onmouseleave="returnText(6, 4, 'pSixFive')">
+              <span class="text-fit">
+                <span><span>African Diasporic Culture Preservation Through Games</span></span>
+                <span aria-hidden="true">African Diasporic Culture Preservation Through Games</span>
+              </span>
+              <p id="pSixFive"></p>
             </div>
           </div>
         </div>
@@ -820,15 +803,19 @@ Speedruns</span>
             </div>
             <div onpointerenter="changeText(7, 2, 'pEightThree')" onmouseleave="returnText(8, 2, 'pEightThree')">
               <span class="text-fit">
-                <span><span>Cognitive Behavioural Therapy (CBT) and Depression Quest: Representing Depression Through Procedural Rhetorics</span></span>
-                <span aria-hidden="true">Cognitive Behavioural Therapy (CBT) and Depression Quest: Representing Depression Through Procedural Rhetorics</span>
+                <span><span>Cognitive Behavioural Therapy (CBT) and Depression Quest: Representing Depression Through
+                    Procedural Rhetorics</span></span>
+                <span aria-hidden="true">Cognitive Behavioural Therapy (CBT) and Depression Quest: Representing
+                  Depression Through Procedural Rhetorics</span>
               </span>
               <p id="pEightThree"></p>
             </div>
             <div onpointerenter="changeText(7, 3, 'pEightFour')" onmouseleave="returnText(8, 3, 'pEightFour')">
               <span class="text-fit">
-                <span><span>The Missing M(other): How Bioshock repackages (M)otherhood Through Playable Fatherhood</span></span>
-                <span aria-hidden="true">The Missing M(other): How Bioshock repackages (M)otherhood Through Playable Fatherhood</span>
+                <span><span>The Missing M(other): How Bioshock repackages (M)otherhood Through Playable
+                    Fatherhood</span></span>
+                <span aria-hidden="true">The Missing M(other): How Bioshock repackages (M)otherhood Through Playable
+                  Fatherhood</span>
               </span>
               <p id="pEightFour"></p>
             </div>
