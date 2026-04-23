@@ -9,6 +9,8 @@ let onDivOne = null;
 
 let onDivs = [];
 
+let visDesc = null;
+
 function main(stuff) {
     panels = stuff;
 
@@ -84,6 +86,7 @@ function main(stuff) {
 }
 
 function changeText(panel, talk, elem) {
+    if(visDesc!=null)visDesc.innerHTML = "";
     var x = document.getElementById(elem);
     if (onDivs[panel] != null) onDivs[panel].classList.remove("on");
     onDivs[panel] = x.parentNode;
@@ -94,16 +97,7 @@ function changeText(panel, talk, elem) {
     } else {
         //y.innerHTML = panels[panel].abstracts[talk].title;
         x.innerHTML = panels[panel].abstracts[talk].description;
-    }
-}
-
-function returnText(panel, talk, elem) {
-    var x = document.getElementById(elem);
-    if (talk == -1) {
-        //y.innerHTML = panels[panel].title;
-    } else {
-        //y.innerHTML = panels[panel].abstracts[talk].title
-        x.innerHTML = "";
+        visDesc = x;
     }
 }
 
