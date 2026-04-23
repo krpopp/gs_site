@@ -117,13 +117,13 @@ body{
 .papers div:hover{
   width: calc(var(--s) * var(--f));
   height: calc(var(--s) * var(--f));
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .papers div.on{
   width: calc(var(--s) * var(--f));
   height: calc(var(--s) * var(--f));
-  overflow: hidden;
+  overflow: scroll;
   border-color: #ee3773;
   border-width: 3px;
 }
